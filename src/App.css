@@ -1,0 +1,233 @@
+html {
+  font-size: 17px;
+  /*root font size for rem*/
+  color: #94a3b8;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: radial-gradient(1600px circle at var(--mouse-x) var(--mouse-y), rgba(18, 32, 68, 1), transparent 35%);
+  background-size: 200% 200%; /*Must be obscenely large or else the background will repeat and it will affect the pointer highlight*/
+  background-color: #0f172a;
+}
+
+.App {
+  height: 100vh;
+  width: 67vw;
+  display: flex;
+  align-items: center;
+  margin: 5% auto 0 auto;
+}
+
+.Header {
+  width: 44%;
+  height: 100%;
+  margin: 0 0 0 4%;
+}
+
+.Header--container {
+  position: fixed;
+}
+
+.Header--name {
+  margin: 0 0 0 0;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #e2e8f0;
+}
+
+.Header--name a:link {
+  text-decoration: none;
+  color: #e2e8f0;
+}
+
+.Header--name a:visited {
+  color: #e2e8f0;
+}
+
+.Header--position {
+  margin: 5px 0 0 0;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #e2e8f0;
+}
+
+.Header--subtitle {
+  margin: 15px 0 0 0;
+  font-size: 1rem;
+  font-weight: 400;
+  width: 56%;
+}
+
+.Header--nav {
+  margin: 75px 0 0 0;
+  padding: 0;
+  font-size: 0.75rem;
+  font-weight: 700;
+  list-style-type: none;
+}
+
+.Header--experience {
+  margin: 25px 0 0 0;
+}
+
+.Header--projects {
+  margin: 25px 0 0 0;
+}
+
+.Header--nav-link:link {
+  color: #94a3b8;
+  text-decoration: none;
+}
+
+.Header--nav-link:visited {
+  color: #94a3b8;
+}
+
+.Header--nav-link:hover {
+  color: #e2e8f0
+}
+
+.Header--nav-line {
+  display: flex;
+  width: 30px;
+  border-top: 1px solid #ccc
+}
+
+
+.Header--socials {
+  margin: 400px 0 0 5px;
+}
+
+.Header--socials img {
+  margin: 0 20px 0 0;
+}
+
+.Main {
+  width: 47%;
+  height: 100%;
+  margin: 0 4% 0 1%;
+}
+
+.About--emphasize {
+  color: #e2e8f0;
+  font-weight: 500;
+}
+
+.About--emphasize:hover {
+  color: #5eead4;
+}
+
+.Experience {
+  margin: 140px 0 0 0;
+}
+
+.ExpCard--container {
+  display: flex;
+  margin: 0 0 50px 0;
+}
+
+.ExpCard--date {
+  font-size: 0.75rem;
+  color: #64748b;
+  font-weight: 600;
+  width: 140px;
+  margin: 4px 0 0 0;
+}
+
+.ExpCard--content {
+  width: 455px;
+  margin: 0 0 0 15px;
+}
+
+.ExpCard--title {
+  font-size: 1rem;
+  color: #e2e8f0;
+  font-weight: 500;
+  margin: 0 0 0 0;
+}
+
+.ExpCard--title-bullet {
+  font-size: 0.5rem;
+  vertical-align: middle;
+}
+
+.ExpCard--title:hover {
+  color: #5eead4;
+}
+
+.ExpCard--description {
+  font-size: 0.875rem;
+  color: #94a3b8;
+  font-weight: 400;
+  margin: 7px 0 7px 0;
+}
+
+.ExpCard--attachedlinks {
+  margin: 14px 0 14px 0;
+}
+
+.ExpCard--perlink {
+  font-size: 0.875rem;
+  margin: 0 15px 0 0;
+
+  z-index: 2;
+}
+
+.ExpCard--perlink:link {
+  color: #cbd5e1;
+  text-decoration: none;
+}
+
+.ExpCard--perlink:visited {
+  color: #cbd5e1;
+}
+
+.ExpCard--perlink:hover {
+  color: #5eead4;
+}
+
+.ExpCard--skills {
+  margin: 7px 0 0 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.ExpCard--perskill {
+  font-size: 0.75rem;
+  background-color: rgb(94, 234, 212, 0.1);
+  color: #5eead4;
+  width: auto;
+  border-radius: 15px;
+  padding: 10px 10px 10px 10px;
+  margin: 0 5px 10px 0;
+}
+
+/*Code for Experience Card highlight when hovering*/
+
+.ExpCard {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.ExpCard--highlight {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.03);
+  border-radius: 5px;
+  top: -25px;
+  left: -25px;
+  width: calc(100% + 50px);
+  height: calc(100% + 50px);
+  border-top: 1px solid rgb(255, 255, 255, 0.075);
+  box-shadow: 0 4px 4px -2px rgb(0, 0, 0, 0.2);
+  /*pointer-events: none; This solves the Tech Debt of mouse over links not working*/
+}
+
+.ExpCard:hover {
+  cursor: pointer;
+}
+
+/*End of code for Experience Card highlight*/
