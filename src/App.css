@@ -1,13 +1,15 @@
 html {
-  font-size: 17px;
+  font-size: 16px;
   /*root font size for rem*/
   color: #94a3b8;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: "Inter", sans-serif;
   background: radial-gradient(1600px circle at var(--mouse-x) var(--mouse-y), rgba(18, 32, 68, 1), transparent 35%);
-  background-size: 200% 200%; /*Must be obscenely large or else the background will repeat and it will affect the pointer highlight*/
+  background-size: 400% 400%;
+  /*Must be obscenely large or else the background will repeat and it will affect the pointer highlight*/
   background-color: #0f172a;
 }
 
@@ -56,6 +58,7 @@ body {
   margin: 15px 0 0 0;
   font-size: 1rem;
   font-weight: 400;
+  line-height: 1.5rem;
   width: 56%;
 }
 
@@ -78,6 +81,7 @@ body {
 .Header--nav-link:link {
   color: #94a3b8;
   text-decoration: none;
+  letter-spacing: 0.075rem;
 }
 
 .Header--nav-link:visited {
@@ -85,28 +89,38 @@ body {
 }
 
 .Header--nav-link:hover {
-  color: #e2e8f0
+  color: #e2e8f0;
 }
 
-.Header--nav-line {
-  display: flex;
-  width: 30px;
-  border-top: 1px solid #ccc
+.Header--spotify{
+  margin: 295px 0 0 0;
+  width: 55%;
+  height: 80px;
 }
-
 
 .Header--socials {
-  margin: 400px 0 0 5px;
+  margin: 45px 0 0 5px;
+  height: 25px;
 }
 
 .Header--socials img {
   margin: 0 20px 0 0;
+  height: 100%;
+  filter: invert(70%) sepia(11%) saturate(559%) hue-rotate(175deg) brightness(90%) contrast(88%);
+}
+
+.Header--socials img:hover {
+  filter: invert(88%) sepia(13%) saturate(116%) hue-rotate(175deg) brightness(104%) contrast(93%);
 }
 
 .Main {
   width: 47%;
   height: 100%;
   margin: 0 4% 0 1%;
+}
+
+.About {
+  line-height: 1.625rem;
 }
 
 .About--emphasize {
@@ -118,8 +132,8 @@ body {
   color: #5eead4;
 }
 
-.Experience {
-  margin: 140px 0 0 0;
+.Experiences {
+  padding: 110px 0 0 0;
 }
 
 .ExpCard--container {
@@ -127,17 +141,38 @@ body {
   margin: 0 0 50px 0;
 }
 
-.ExpCard--date {
-  font-size: 0.75rem;
-  color: #64748b;
-  font-weight: 600;
-  width: 140px;
+.ExpCard--subcontent {
+  width: 145px;
+  height: 75px;
   margin: 4px 0 0 0;
 }
 
+.ExpCard--date {
+  font-size: 0.75rem;
+  letter-spacing: 0.02rem;
+  color: #64748b;
+  font-weight: 600;
+  margin: 0;
+}
+
+.ExpCard--image-container {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  border: 2px solid rgb(0, 0, 0, 0);
+}
+
+.ExpCard--image {
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+  object-fit: cover;
+}
+
 .ExpCard--content {
-  width: 455px;
+  width: 450px;
   margin: 0 0 0 15px;
+  line-height: 1.3rem;
 }
 
 .ExpCard--title {
@@ -197,11 +232,12 @@ body {
 
 .ExpCard--perskill {
   font-size: 0.75rem;
+  font-weight: 500;
   background-color: rgb(94, 234, 212, 0.1);
   color: #5eead4;
   width: auto;
   border-radius: 15px;
-  padding: 10px 10px 10px 10px;
+  padding: 6px 10px 6px 10px;
   margin: 0 5px 10px 0;
 }
 
@@ -231,3 +267,56 @@ body {
 }
 
 /*End of code for Experience Card highlight*/
+
+.Main--view-all {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.Main--view-all:link {
+  color: #cbd5e1;
+  text-decoration: none;
+}
+
+.Main--view-all:visited {
+  color: #cbd5e1;
+}
+
+.Main--view-all:hover {
+  color: #5eead4;
+}
+
+.Footer {
+  margin: 125px 0 0 0;
+  padding: 0 0 96px 0;
+}
+
+.Footer--credits {
+  margin: 0 0 0 0;
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: #64748b;
+}
+
+.Footer--emphasize {
+  color: #94a3b8;
+}
+
+.Footer--emphasize:link {
+  color: #94a3b8;
+  text-decoration: none;
+}
+
+.Footer--emphasize:visited {
+  color: #94a3b8;
+}
+
+.Footer--emphasize:active {
+  color: #5eead4;
+}
+
+.Footer--emphasize:hover {
+  color: #5eead4;
+}
+
