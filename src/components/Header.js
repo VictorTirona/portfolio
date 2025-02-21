@@ -44,7 +44,7 @@ export default function Header() {
             <div className="Header--container">
                 <h1 className="Header--name"><a href="#">Tor Tirona</a></h1>
                 <h2 className="Header--position">Software Engineer</h2>
-                <h3 className="Header--subtitle">Product/Project/Software OR I could just put which languages I'm proficient in here</h3>
+                <h3 className="Header--subtitle">I like turning ideas into React Web Apps.</h3>
 
                 <ul className="Header--nav">
                     <li className="Header--about"><a href="#" className="Header--nav-link" style={styleActiveAbout}>{(activeNav=="About")?"——":""}— ABOUT</a></li>

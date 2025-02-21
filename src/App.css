@@ -29,6 +29,7 @@ body {
 
 .Header--container {
   position: fixed;
+  width: 25%;
 }
 
 .Header--name {
@@ -59,7 +60,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5rem;
-  width: 56%;
+  width: 70%;
 }
 
 .Header--nav {
@@ -94,7 +95,7 @@ body {
 
 .Header--spotify{
   margin: 295px 0 0 0;
-  width: 55%;
+  width: 70%;
   height: 80px;
 }
 

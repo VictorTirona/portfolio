@@ -14,7 +14,7 @@ export default function Projects() {
     return (
         <div className="Experiences NavbarSection" id="Projects">
             {projectMapped}
-            <a className="Main--view-all" href="#projects" target="_blank">View Full Project Archive</a>
+            {/*<a className="Main--view-all" href="#projects" target="_blank">View Full Project Archive</a>*/}
         </div>
     )
 }

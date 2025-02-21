@@ -2,48 +2,26 @@ export default [
     {
         startYear: "",
         endYear: "",
-        expCardImage: "./images/project-wat-arun.jpg",
-        title: "Project Name 1",
+        expCardImage: "./images/kahitsaan.jpg",
+        title: "KahitSaan - Tinder but for Restaurants",
         company: "",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+        description: "Utilized the Google Maps Places API to create a fun way to find nearby restaurants to eat at.",
         attachedLinks: [],
-        skills: ["React", "CSS", "JavaScript"],
-        link: "https://www.lipsum.com/",
+        skills: ["Google Maps Places API", "React", "NodeJS", "ExpressJS", "Vercel",],
+        link: "https://kahitsaan.vercel.app/",
         showCompany: false,
         dateOrImage: false
     }, 
     {
         startYear: "",
         endYear: "",
-        expCardImage: "./images/project-black-test-box.jpg",
-        title: "Project Name 2",
+        expCardImage: "./images/medbuddy.jpg",
+        title: "MedBuddy - Digitize your Medical Records",
         company: "",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+        description: "Designed and built a WebApp where users can record their illnesses to keep track of their health.",
         attachedLinks: [],
-        skills: ["React", "CSS", "JavaScript"],
-        link: "https://www.lipsum.com/",
-        showCompany: false,
-        dateOrImage: false
-    },
-    {
-        startYear: "",
-        endYear: "",
-        expCardImage: "./images/project-wat-arun.jpg",
-        title: "Project Name 3",
-        company: "",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-        attachedLinks: [
-            {
-                title: "3,000 Downloads",
-                link: "https://www.lipsum.com/"
-            },
-            {
-                title: "100 Likes",
-                link: "https://pomofocus.io/"
-            }
-        ],
-        skills: ["React", "CSS", "JavaScript"],
-        link: "https://www.lipsum.com/",
+        skills: ["React", "CSS", "NodeJS", "ExpressJS", "Supabase", "Vercel"],
+        link: "https://med-buddy-alpha.vercel.app/",
         showCompany: false,
         dateOrImage: false
     }
