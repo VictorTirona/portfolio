@@ -58,7 +58,6 @@ export default function Header() {
                 <div className="Header--socials">
                     <a href="https://github.com/VictorTirona" target="_blank"><img className="Header--socials-github" src="../images/icons8-github.svg" alt="Github link" /></a>
                     <a href="https://www.linkedin.com/in/victorbtirona/" target="_blank"><img className="Header--socials-linkedin" src="../images/icons8-linkedin.svg" alt="Linkedin link" /></a>
-                    <a href="https://www.instagram.com/victortirona/" target="_blank"><img className="Header--socials-instagram" src="../images/icons8-instagram.svg" alt="Instagram link" /></a>
                     <a href="https://myanimelist.net/animelist/arcoa" target="_blank"><img className="Header--socials-myanimelist" src="../images/icons8-myanimelist.svg" alt="MyAnimeList link" /></a>
                     <a href="https://medium.com/@tors20s" target="_blank"><img className="Header--socials-medium" src="../images/icons8-medium.svg" alt="Medium link" /></a>
                 </div>

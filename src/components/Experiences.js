@@ -15,7 +15,7 @@ export default function Experiences() {
     return (
         <div className="Experiences NavbarSection" id="Experiences">
             {experienceCardsMapped}
-            <a className="Main--view-all" href="#resume" target="_blank">View Full Resume</a>
+            <a className="Main--view-all" href="/resume.pdf" target="_blank">View Full Resume</a>
         </div>
     )
 }
